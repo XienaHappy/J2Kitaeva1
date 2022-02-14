@@ -2,15 +2,21 @@ package LessonOneKitaeva;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("********************");
+        System.out.println("The Competition starts!");
+        System.out.println("____________________________");
 
-        System.out.println("Dreamteam starts the Campionship!");
+                Championship c = new Championship(new Barrier[]{new Run(100), new SwimingPool(200)});
+                Team team = new Team(" Super Zoo","red", "It's time to win!", new Competitor[]{new Teammate("The dog Daisy"), new Cat ("The cat Leopold"), new Bird(" eagle Fluffy")});
 
-                Championship c = new Championship(new Barrier[]{new Run(200), new SwimingPool(500)});
-                Team team = new Team("Dreamteam", new Competitor[]{new Teammate("Fire bird"), new Cat ("Teammate2"), new Bird("Teammate3")});
+                team.teamInfo();
+        System.out.println("____________________________");
                 c.go(team);
+        System.out.println("____________________________");
                 team.showResults();
+        System.out.println("____________________________");
 
-        System.out.println("Championship completed. Welcome again!");
+        System.out.println("Competition completed. Welcome again!");
             }
 
         }
