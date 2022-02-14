@@ -7,7 +7,7 @@ public class Main {
         System.out.println("____________________________");
 
                 Championship c = new Championship(new Barrier[]{new Run(100), new SwimingPool(200)});
-                Team team = new Team(" Super Zoo","red", "It's time to win!", new Competitor[]{new Teammate("The dog Daisy"), new Cat ("The cat Leopold"), new Bird(" eagle Fluffy")});
+                Team team = new Team(" Super Zoo","green", "It's time to win!", new Competitor[]{new Teammate("The dog Daisy"), new Cat ("The cat Leopold"), new Bird(" eagle Fluffy")});
 
                 team.teamInfo();
         System.out.println("____________________________");
