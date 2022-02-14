@@ -15,17 +15,17 @@ package LessonOneKitaeva;
 
         public Teammate(String name) {
             this.name = name;
-            this.maximumRun = 1000;
-            this.maximumSwim = 200;
+            this.maximumRun = 150;
+            this.maximumSwim = 300;
             this.active = true;
         }
 
         @Override
         public void run(int dist) {
             if (dist <= maximumRun) {
-                System.out.println(name + " runs very good! Winner!");
+                System.out.println(name + " runs very fast! Good result!");
             } else {
-                System.out.println(name + " runs not very good. Try next time(");
+                System.out.println(name + " runs quite slow. Nice try, but it loose(");
                 active = false;
             }
         }
@@ -34,9 +34,9 @@ package LessonOneKitaeva;
         @Override
         public void swim(int dist) {
             if (dist <= maximumSwim) {
-                System.out.println(name + " swims very good! Champion!");
+                System.out.println(name + " swims perfect! It is the best result!");
             } else {
-                System.out.println(name + " swims not very good. Try next time(");
+                System.out.println(name + " swims rather poor. Try next time(");
                 active = false;
             }
         }

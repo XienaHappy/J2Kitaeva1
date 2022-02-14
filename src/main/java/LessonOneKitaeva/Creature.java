@@ -27,7 +27,7 @@ package LessonOneKitaeva;
             if (dist <= maximumRun) {
                 System.out.println(type + " " + name + " runs very good! It is victory!");
             } else {
-                System.out.println(type + " " + name + " runs not very good. Need to train harder!");
+                System.out.println(type + " " + name + " runs not very good. Needs to train harder!");
                 onDistance = false;
             }
         }
@@ -43,7 +43,7 @@ package LessonOneKitaeva;
             if (dist <= maximumSwim) {
                 System.out.println(type + " " + name + " swims like a fish! Perfect!");
             } else {
-                System.out.println(type + " " + name + "can't swim.");
+                System.out.println(type + " " + name + " can't swim.Leaves the competition(");
                 onDistance = false;
             }
         }
